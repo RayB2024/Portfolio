@@ -92,7 +92,8 @@ nav ul li a:hover {
 /* Bio Section Styles */
 #bio {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center align items */
     padding: 20px;
     margin: 20px auto;
     width: 80%;
@@ -104,22 +105,47 @@ nav ul li a:hover {
 .bio-container {
     display: flex;
     align-items: center;
+    width: 100%; /* Full width for the container */
 }
 
+/* Bio Photo */
 .bio-photo {
     flex: 1;
     margin-right: 20px;
 }
 
 .bio-photo img {
-    width: 60%;
+    width: 100%; /* Full width of the container */
     height: auto;
     border-radius: 8px; /* Optional: adds rounded corners */
 }
 
+/* Bio Description */
 .bio-description {
     flex: 2;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #bio {
+        flex-direction: column; /* Stack photo and description vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .bio-photo {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+
+    .bio-photo img {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .bio-description {
+        text-align: center; /* Center text for better readability */
+    }
+}
+
 
 /* Section Styles */
 section {
