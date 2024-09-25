@@ -97,6 +97,7 @@ nav ul li a:hover {
     padding: 20px;
     margin: 20px auto;
     width: 80%;
+    height: 350px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -111,12 +112,12 @@ nav ul li a:hover {
 /* Bio Photo */
 .bio-photo {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .bio-photo img {
-    width: 100%; /* Full width of the container */
-    height: auto;
+    width: 70%; /* Full width of the container */
+    height: 350px;
     border-radius: 8px; /* Optional: adds rounded corners */
 }
 
